@@ -1,0 +1,6 @@
+{
+  "name": "AXIS Spine & Mobility Institute",
+  "description": "Premium cinematic website for an advanced spine, orthopaedic and sports-injury clinic.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@200..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-axis-black: #F8F7F2;
+  --color-axis-graphite: #F1F3ED;
+  --color-axis-surface: #FFFFFF;
+  --color-axis-white: #18211D;
+  --color-axis-grey: #65706A;
+  --color-axis-mint: #176B4D;
+  --color-axis-cyan: #0D4F38;
+  --color-axis-amber: #EEE4D7;
+
+  --color-axis-main: #F8F7F2;
+  --color-axis-secondary: #F1F3ED;
+  --color-axis-card: #FFFFFF;
+  --color-axis-text: #18211D;
+  --color-axis-muted: #65706A;
+  --color-axis-green: #176B4D;
+  --color-axis-dark-green: #0D4F38;
+  --color-axis-mint-light: #DCEBE3;
+  --color-axis-sage: #E8EFE8;
+  --color-axis-blue: #E3EDF1;
+  --color-axis-lavender: #EEE8F2;
+  --color-axis-beige: #EEE4D7;
+  --color-axis-border: rgba(24, 33, 29, 0.10);
+  
+  --font-sans: 'Manrope', sans-serif;
+  --font-serif: 'Instrument Serif', serif;
+}
+
+@layer base {
+  html {
+    @apply antialiased scroll-smooth;
+    background-color: var(--color-axis-black);
+    color: var(--color-axis-white);
+  }
+  
+  body {
+    @apply font-sans;
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans tracking-tight;
+  }
+  
+  .font-serif {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom utility classes */
+.glass-panel {
+  @apply bg-axis-surface/80 backdrop-blur-md border border-axis-white/10 shadow-sm rounded-2xl;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-axis-cyan to-axis-mint;
+}
+
